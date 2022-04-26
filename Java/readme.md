@@ -44,3 +44,12 @@
     - Simpel en bulky, gebaseerd op de TexttestFixture testclasse
     - Waarom? Omdat het duidelijk is, werkt en ik tijdens het refactoren van de productiecode ook de testen ga herschrijven. -> TDD
     - Conjured item nog niet toegevoegd.
+
+- Versies updaten
+  - Java 1.8 -> 17 (vereist Gradle upgrade 6.5 -> 7.2)
+    - Waarom?
+      - Grote refactor is mogelijkheid om te upgraden
+      - 17 is de huidige LTS versie en wordt al ondersteund door quasi alle belangrijke libraries
+      - Leuke nieuwe opties, zoals records etc
+  - junit-jupiter 5.6.2 -> 5.8.2
+
