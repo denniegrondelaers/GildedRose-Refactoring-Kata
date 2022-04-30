@@ -1,11 +1,11 @@
-package com.gildedrose.rules;
+package com.gildedrose.rules.item;
 
 import com.gildedrose.Item;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RuleEngine {
+public class ItemRuleEngine {
 
     private static final List<ItemRule> itemRules = new ArrayList<>();
 

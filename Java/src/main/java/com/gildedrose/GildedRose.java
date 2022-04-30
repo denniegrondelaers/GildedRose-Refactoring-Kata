@@ -1,10 +1,10 @@
 package com.gildedrose;
 
-import com.gildedrose.rules.RuleEngine;
+import com.gildedrose.rules.item.ItemRuleEngine;
 
 class GildedRose {
-    public final Item[] items;
-    private final RuleEngine ruleEngine = new RuleEngine();
+    private final Item[] items;
+    private final ItemRuleEngine itemRuleEngine = new ItemRuleEngine();
 
     public GildedRose(Item[] items) {
         this.items = items;
@@ -12,7 +12,7 @@ class GildedRose {
 
     public void updateQuality() {
         for (Item item : items) {
-            ruleEngine.process(item);
+            itemRuleEngine.process(item);
         }
     }
 }
