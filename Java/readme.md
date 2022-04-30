@@ -1,7 +1,7 @@
 - Geforkt en git clone
 - Geopende in IntelliJ, project op basis van Gradle file
 - Run gradle clean build
-    Test faalt -> staat in Requirements Specification. Ze liegen niet.
+    Test faalt -> staat in Requirements Specification, dus dit was verwacht.
 - Run gradle clean build -x test
     Build groen, want negeert testen.
 - gradle file bekijken:
@@ -13,9 +13,9 @@
     - Lezen, wat gebeurt er.
     Eerste opmerkingen:
         - Van Item class en Items property afblijven (as per Requirements Specification -> boze goblin)
-            Hierdoor ook geen getters en setters -> Extend? Extend.
+            Hierdoor ook geen getters en setters -> Extend? Misschien.
         - Items en UpdateQuality mogen eventueel static (as per Requirements Specification)
-        - Heeeeeel veel if's. Te veel.
+        - Veel if's. Te veel.
             Soms ook if within an if die samengevoegd kan worden.
         - De for statement kan simpeler en duidelijker.
         - Item array?
@@ -41,7 +41,7 @@
         - Items property - DO NOT TOUCh (mag eventueel static)
 
 - Testen fixen
-    - Simpel en bulky, gebaseerd op de TexttestFixture testclasse
+    - In eerste instantie simpel en bulky, gebaseerd op de TexttestFixture testclasse
     - Waarom? Omdat het duidelijk is, werkt en ik tijdens het refactoren van de productiecode ook de testen ga herschrijven. -> TDD
     - Opmerking: Indien "Aged Brie" sellIn kleiner is dan 0 verhoogt de kwaliteit met 2 ipv 1. De Requirements Specification zeggen
         dat de bestaande code correct is, dus ik zal het nu zo implementeren, maar dit zou ik normaal willen afchecken met de product owner,
@@ -91,4 +91,9 @@
         maar hier gewoon te lang. Ik laat het hier nu zo, opnieuw in functie van de oefening.
 
 - Refactor ronde 4
-  - Conjured item toegevoegd, eveneens volgens TDD.
+  - Conjured item toegevoegd, eveneens volgens TDD. Duurde geen 5 minuten.
+
+- Conclusie
+  - De code is nu leesbaarder, makkelijker uitbreidbaar en beter getest. Ik heb zelf nog enkele opmerkingen
+    die ik eerder heb aangekaart, maar dat is het soort dingen dat ik graag in team of met de product owner uitklaar.
+    De intentie hier was om de code te laten werken zoals het oorspronkelijk werkte en het lijkt me dat dit gelukt is.
