@@ -89,3 +89,6 @@
         Het is hier mogelijk wat overkill, maar bij uitbreiding van de rules kan dit vruchten afwerpen.
         De methodenamen zijn ook te lang naar mijn zin, lang en descriptief is perfect ok bij een test,
         maar hier gewoon te lang. Ik laat het hier nu zo, opnieuw in functie van de oefening.
+
+- Refactor ronde 4
+  - Conjured item toegevoegd, eveneens volgens TDD.

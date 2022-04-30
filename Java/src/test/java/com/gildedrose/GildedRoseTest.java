@@ -12,7 +12,7 @@ class GildedRoseTest {
     public static final String ELIXIR_OF_THE_MONGOOSE = "Elixir of the Mongoose";
     public static final String SULFURAS = "Sulfuras, Hand of Ragnaros";
     public static final String BACKSTAGE_PASSES = "Backstage passes to a TAFKAL80ETC concert";
-    // new Item("Conjured Mana Cake", 3, 6)
+    public static final String CONJURED = "Conjured Mana Cake";
 
     private final ItemRuleEngine engine = new ItemRuleEngine();
 
@@ -58,6 +58,16 @@ class GildedRoseTest {
     void givenBackstagePasses_whenProcessing_thenUpdateSellInAndQualityCorrectly(int preSellIn, int preQuality,
                                                                                  int postSellIn, int postQuality) {
         testItem(BACKSTAGE_PASSES, preSellIn, preQuality, postSellIn, postQuality);
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+        "10, 20, 9, 18",
+        "0, 20, -1, 16",
+        "10, 0, 9, 0"})
+    void givenConjuredItem_whenProcessing_thenUpdateSellInAndQualityCorrectly(int preSellIn, int preQuality,
+                                                                              int postSellIn, int postQuality) {
+        testItem(CONJURED, preSellIn, preQuality, postSellIn, postQuality);
     }
 
     private void testItem(String itemName, int preSellIn, int preQuality, int postSellIn, int postQuality) {

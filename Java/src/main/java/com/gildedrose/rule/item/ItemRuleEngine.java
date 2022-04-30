@@ -13,6 +13,7 @@ public class ItemRuleEngine {
         itemRules.add(new AgedBrieRule());
         itemRules.add(new SulfurasRule());
         itemRules.add(new BackstagePassesRule());
+        itemRules.add(new ConjuredItemRule());
     }
 
     public void process(Item item) {

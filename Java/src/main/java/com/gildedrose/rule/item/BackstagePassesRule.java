@@ -15,7 +15,7 @@ public class BackstagePassesRule implements ItemRule {
             .ifQualityIsLessThanValueThenAlterQuality(50, 1)
             .ifSellInIsLowerThanValueAndAndQualityLessThanFiftyThenIncrementQuality(11)
             .ifSellInIsLowerThanValueAndAndQualityLessThanFiftyThenIncrementQuality(6)
-            .decrementSellIn()
+            .decrementSellInByOne()
             .ifSellInIsLowerThanZeroThenSetQualityToZero()
         ;
     }

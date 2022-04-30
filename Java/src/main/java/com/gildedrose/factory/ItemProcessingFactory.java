@@ -9,19 +9,19 @@ public class ItemProcessingFactory {
         this.item = item;
     }
 
-    public ItemProcessingFactory decrementSellIn() {
+    public ItemProcessingFactory decrementSellInByOne() {
         item.sellIn--;
         return this;
     }
 
-    public ItemProcessingFactory decrementQuality() {
-        item.quality--;
+    public ItemProcessingFactory decrementQualityByValue(int quality) {
+        item.quality -= quality;
         return this;
     }
 
-    public ItemProcessingFactory ifSellInIsLowerThanValueThenAlterQuality(int sellInLowerBoundary, int quantityTransformation) {
+    public ItemProcessingFactory ifSellInIsLowerThanValueThenAlterQuality(int sellInLowerBoundary, int qualtityTransformation) {
         if (item.sellIn < sellInLowerBoundary) {
-            item.quality += quantityTransformation;
+            item.quality += qualtityTransformation;
         }
         return this;
     }
@@ -33,9 +33,9 @@ public class ItemProcessingFactory {
         return this;
     }
 
-    public ItemProcessingFactory ifQualityIsLessThanValueThenAlterQuality(int qualityUpperBoundary, int quantityTransformation) {
+    public ItemProcessingFactory ifQualityIsLessThanValueThenAlterQuality(int qualityUpperBoundary, int qualtityTransformation) {
         if (item.quality < qualityUpperBoundary) {
-            item.quality += quantityTransformation;
+            item.quality += qualtityTransformation;
         }
         return this;
     }

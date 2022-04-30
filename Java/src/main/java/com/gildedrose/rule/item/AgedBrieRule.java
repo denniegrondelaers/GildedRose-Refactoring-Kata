@@ -13,7 +13,7 @@ public class AgedBrieRule implements ItemRule {
     public void apply(Item item) {
         new ItemProcessingFactory(item)
             .ifQualityIsLessThanValueThenAlterQuality(50, 1)
-            .decrementSellIn()
+            .decrementSellInByOne()
             .ifSellInIsLowerThanValueAndAndQualityLessThanFiftyThenIncrementQuality(0);
     }
 }
