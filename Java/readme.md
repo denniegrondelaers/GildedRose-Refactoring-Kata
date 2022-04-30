@@ -81,3 +81,11 @@
   - Maven verwijderd
   - Access parameters geoptimaliseerd en package voor itemrules aangemaakt om onderscheid tussen
         herbruikbare interface en Item-specifieke classes te bewaren
+
+- Refactor ronde 3
+  - ItemProcessingFactory toegevoegd om de bewerkingen van quality en sellIn te stroomlijnen. Ik had hier opnieuw
+        met rules kunnen werken, maar in functie van de oefening heb ik dit gekozen. Technisch gezien geen echte factory,
+        aangezien we geen nieuw object aanmaken, maar waarden van een bestaand object aanpassen.
+        Het is hier mogelijk wat overkill, maar bij uitbreiding van de rules kan dit vruchten afwerpen.
+        De methodenamen zijn ook te lang naar mijn zin, lang en descriptief is perfect ok bij een test,
+        maar hier gewoon te lang. Ik laat het hier nu zo, opnieuw in functie van de oefening.

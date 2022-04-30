@@ -1,4 +1,4 @@
-package com.gildedrose.rules;
+package com.gildedrose.rule;
 
 public interface IRule<E> {
     boolean matches(E item);

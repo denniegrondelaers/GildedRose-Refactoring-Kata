@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-import com.gildedrose.rules.item.ItemRuleEngine;
+import com.gildedrose.rule.item.ItemRuleEngine;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 

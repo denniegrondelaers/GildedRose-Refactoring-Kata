@@ -1,6 +1,6 @@
 package com.gildedrose;
 
-import com.gildedrose.rules.item.ItemRuleEngine;
+import com.gildedrose.rule.item.ItemRuleEngine;
 
 class GildedRose {
     private final Item[] items;

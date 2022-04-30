@@ -1,4 +1,4 @@
-package com.gildedrose.rules.item;
+package com.gildedrose.rule.item;
 
 import com.gildedrose.Item;
 
@@ -10,6 +10,6 @@ public class SulfurasRule implements ItemRule {
 
     @Override
     public void apply(Item item) {
-        //nothing
+        //Do nothing
     }
 }

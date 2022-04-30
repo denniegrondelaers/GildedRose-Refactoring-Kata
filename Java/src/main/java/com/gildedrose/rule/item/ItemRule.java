@@ -1,6 +1,6 @@
-package com.gildedrose.rules.item;
+package com.gildedrose.rule.item;
 
 import com.gildedrose.Item;
-import com.gildedrose.rules.IRule;
+import com.gildedrose.rule.IRule;
 
 public interface ItemRule extends IRule<Item> {}
