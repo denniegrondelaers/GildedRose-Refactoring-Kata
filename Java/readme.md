@@ -76,3 +76,8 @@
       - De if's staan nu in de Rule apply methode. Dit is al een pak leesbaarder, maar kan misschien nog duidelijker.
       - Enorm veel herhaalde code met verschillende parameters in testen -> parametriseren?
 
+- Refactor ronde 2:
+  - Testen geparametriseerd en herhaalde code in een methode gegoten
+  - Maven verwijderd
+  - Access parameters geoptimaliseerd en package voor itemrules aangemaakt om onderscheid tussen
+        herbruikbare interface en Item-specifieke classes te bewaren
